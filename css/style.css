@@ -1,0 +1,30 @@
+/* styles.css */
+@keyframes emojiAnimation {
+    0% {
+        transform: translateY(-100px) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+    }
+}
+
+.emoji {
+    position: absolute;
+    font-size: 24px;
+    animation: emojiAnimation 6s linear; /* Adjust the duration as needed */
+    /* Add styles to make emojis colorful */
+}
+
+/* Define styles to make emojis colorful */
+.emoji:nth-child(1) {
+    color: red;
+}
+.emoji:nth-child(2) {
+    color: green;
+}
+.emoji:nth-child(3) {
+    color: blue;
+}
+/* Add more styles for additional colorful emojis */
